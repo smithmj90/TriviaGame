@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Trivia Game</title>
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<div id="container">
+		<h1>Totally Trivial Trivia!</h1>
+
+		<button class="thebuttons" id="start-button">Start</button>
+
+		<div id="questionnaire">
+			<div class="counting-down" id="time-remaining">Time Remaining: <span class="counting-down" id="timer"></span> seconds</div>
+			<br/><br/><br/><br/>
+			<div id="question-1">
+				<h3>What was the first full length CGI movie?</h3>
+				<br/>
+				<input type="radio" id="q1c1" value="wrong" name="q1">A Bug's Life
+				<input type="radio" id="q1c2" value="wrong" name="q1">Monsters Inc.
+				<input type="radio" id="q1c3" value="correct" name="q1">Toy Story
+				<input type="radio" id="q1c4" value="wrong" name="q1">The Lion King
+			</div>
+			<br/><br/>
+			<div id="question-2">
+				<h3>Which of these is NOT a name of one of the Spice Girls?</h3>
+				<br/>
+				<input type="radio" class="q-two" value="wrong" name="q2">Sporty Spice
+				<input type="radio" class="q-two" value="correct" name="q2">Fred Spice
+				<input type="radio" class="q-two" value="wrong" name="q2">Scary Spice
+				<input type="radio" class="q-two" value="wrong" name="q2">Posh Spice
+			</div>
+			<br/><br/>
+			<div id="question-3">
+				<h3>Which NBA team won the most titles in the 90s?</h3>
+				<br/>
+				<input type="radio" class="q-three" value="wrong" name="q3">New York Knicks
+				<input type="radio" class="q-three" value="wrong" name="q3">Portland Trailblazers
+				<input type="radio" class="q-three" value="wrong" name="q3">Los Angeles Lakers
+				<input type="radio" class="q-three" value="correct" name="q3">Chicago Bulls
+			</div>
+			<br/><br/>
+			<div id="question-4">
+				<h3>Which group released the hit song, "Smells Like Teen Spirit"?</h3>
+				<br/>
+				<input type="radio" class="q-four" value="correct" name="q4">Nirvana
+				<input type="radio" class="q-four" value="wrong" name="q4">Backstreet Boys
+				<input type="radio" class="q-four" value="wrong" name="q4">The Offspring
+				<input type="radio" class="q-four" value="wrong" name="q4">No Doubt
+			</div>
+			<br/><br/>
+			<div id="question-5">
+				<h3>Which popular Disney movie featured the song, "Circle of Life"?</h3>
+				<br/>
+				<input type="radio" class="q-five" value="wrong" name="q5">Aladdin
+				<input type="radio" class="q-five" value="wrong" name="q5">Hercules
+				<input type="radio" class="q-five" value="wrong" name="q5">Mulan
+				<input type="radio" class="q-five" value="correct" name="q5">The Lion King
+			</div>
+			<br/><br/>
+			<button class="thebuttons" id="done-button">Done</button>
+		</div>
+		<div id="results-page">
+			<h2>All Done!</h2>
+			<br/>
+			<p>Correct Answers: <span id="correct-score"></span></p>
+			<p>Incorrect Answers: <span id="incorrect-score"></span></p>
+			<p>Unanswered: <span id="unanswered-score"></span></p>
+		</div>
+	</div>
+
+
+<script src="https://code.jquery.com/jquery-3.1.0.slim.min.js"></script>
+<script src="assets/javascript/app.js"></script>
+</body>
+</html>
